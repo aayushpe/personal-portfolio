@@ -1,6 +1,9 @@
 import meter1 from "../assets/img/meter1.svg";
 import meter2 from "../assets/img/meter2.svg";
 import meter3 from "../assets/img/meter3.svg";
+import mongodb from "../assets/img/mongodb.svg";
+import spring from "../assets/img/spring-boot.svg";
+import express from "../assets/img/express.svg";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import arrow1 from "../assets/img/arrow1.svg";
@@ -34,20 +37,32 @@ export const Skills = () => {
             <div className="row">
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
-                        <h2>Skills</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
+                        <h2>Technologies</h2>
+                        <p>Below is a list of techonologies I have used<br></br> during my software journey.</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
                                 <img src={meter1} alt="Image" />
-                                <h5>Back-End Development</h5>
+                                <h5>NodeJS</h5>
                             </div>
                             <div className="item">
                                 <img src={meter2} alt="Image" />
-                                <h5>Front-End</h5>
+                                <h5>React</h5>
                             </div>
                             <div className="item">
                                 <img src={meter3} alt="Image" />
-                                <h5>Machine Learning</h5>
+                                <h5>Docker</h5>
+                            </div>
+                            <div className="item">
+                                <img src={mongodb} alt="Image" />
+                                <h5>MongoDB</h5>
+                            </div>
+                            <div className="item">
+                                <img src={express} alt="Image" />
+                                <h5>Express</h5>
+                            </div>
+                            <div className="item">
+                                <img src={spring} alt="Image" />
+                                <h5>Spring Boot</h5>
                             </div>
                         </Carousel>
                     </div>
