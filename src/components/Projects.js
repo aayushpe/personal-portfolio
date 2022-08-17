@@ -6,27 +6,24 @@ import projImg3 from "../assets/img/project-img3.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import Button from 'react-bootstrap/Button';
 
 export const Projects = () => {
 
-  const projects = [
+  const projects1 = [
     {
-      title: "Dad-Joke Generator",
-      description: "React",
+      title: "Gas-Map",
+      description: "MongoDB, Express, Nodejs",
       imgUrl: projImg1,
     },
+  ];
+  const projects2 = [
     {
-      title: "Gas Map",
-      description: "MongoDB, Express, Nodejs",
+      title: "Dad-Jokes",
+      description: "React",
       imgUrl: projImg2,
     },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    }
   ];
-
   return (
     <section className="project" id="project">
       <Container>
@@ -48,11 +45,12 @@ export const Projects = () => {
                       <Nav.Link eventKey="third">Tab 3</Nav.Link>
                     </Nav.Item>
                   </Nav>
+                  
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">
                       <Row>
                         {
-                          projects.map((project, index) => {
+                          projects1.map((project, index) => {
                             return (
                               <ProjectCard
                                 key={index}
@@ -61,14 +59,44 @@ export const Projects = () => {
                             )
                           })
                         }
+                        <p>This Project uses MongoDB, Nodejs and Express to create an app that displays Gas Prices, 
+                        similar to Gas buddy. The app uses a CRUD system in order to store new gas station
+                        location data and prices, which is then is stored in MongoDb.
+                        In addition to this, there is a feature to extract and autofill the gas station price and
+                        name using the Google Vision API.</p>
                       </Row>
+                      <div class="text-center">
+                      <a target="_blank" rel="noreferrer" href="https://github.com/aayushpe/Gas_Map"><Button variant="outline-light">Click to go to project</Button>{' '}</a>
+                      </div>
                     </Tab.Pane>
-                    <Tab.Pane eventKey="section">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+
+                    <Tab.Pane eventKey="second">
+                    <Row>
+                        {
+                          projects2.map((project, index) => {
+                            return (
+                              <ProjectCard
+                                key={index}
+                                {...project}
+                                />
+                            )
+                          })
+                        }
+                        <p>This Project uses MongoDB, Nodejs and Express to create an app that displays Gas Prices, 
+                        similar to Gas buddy. The app uses a CRUD system in order to store new gas station
+                        location data and prices, which is then is stored in MongoDb.
+                        In addition to this, there is a feature to extract and autofill the gas station price and
+                        name using the Google Vision API.</p>
+                      </Row>
+                      <div class="text-center">
+                      <a target="_blank" rel="noreferrer" href="https://github.com/aayushpe/Gas_Map"><Button variant="outline-light">Click to go to project</Button>{' '}</a>
+                      </div>
                     </Tab.Pane>
+
                     <Tab.Pane eventKey="third">
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
                     </Tab.Pane>
+                  
                   </Tab.Content>
                 </Tab.Container>
               </div>}
