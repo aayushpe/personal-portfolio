@@ -30,8 +30,7 @@ export const Projects = () => {
         <Row>
           <Col size={12}>
             <TrackVisibility>
-              {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
+              <div>
                 <h2>Projects</h2>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
@@ -46,7 +45,7 @@ export const Projects = () => {
                     </Nav.Item>
                   </Nav>
                   
-                  <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
+                  <Tab.Content>
                     <Tab.Pane eventKey="first">
                       <Row>
                         {
@@ -94,12 +93,31 @@ export const Projects = () => {
                     </Tab.Pane>
 
                     <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                    <Row>
+                        {
+                          projects1.map((project, index) => {
+                            return (
+                              <ProjectCard
+                                key={index}
+                                {...project}
+                                />
+                            )
+                          })
+                        }
+                        <p>This Project uses MongoDB, Nodejs and Express to create an app that displays Gas Prices, 
+                        similar to Gas buddy. The app uses a CRUD system in order to store new gas station
+                        location data and prices, which is then is stored in MongoDb.
+                        In addition to this, there is a feature to extract and autofill the gas station price and
+                        name using the Google Vision API.</p>
+                        <div class="text-center">
+                          <a target="_blank" rel="noreferrer" href="https://github.com/aayushpe/Gas_Map"><Button variant="outline-light">Click to go to project</Button>{' '}</a>
+                        </div>
+                      </Row>
                     </Tab.Pane>
                   
                   </Tab.Content>
                 </Tab.Container>
-              </div>}
+              </div>
             </TrackVisibility>
           </Col>
         </Row>

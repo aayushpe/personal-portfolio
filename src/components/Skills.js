@@ -41,27 +41,27 @@ export const Skills = () => {
                         <p>Below is a list of techonologies I have used<br></br> during my software journey.</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
-                                <img src={meter1} alt="Image" />
+                                <img src={meter1} alt="Image1" />
                                 <h5>NodeJS</h5>
                             </div>
                             <div className="item">
-                                <img src={meter2} alt="Image" />
+                                <img src={meter2} alt="Image2" />
                                 <h5>React</h5>
                             </div>
                             <div className="item">
-                                <img src={meter3} alt="Image" />
+                                <img src={meter3} alt="Image3" />
                                 <h5>Docker</h5>
                             </div>
                             <div className="item">
-                                <img src={mongodb} alt="Image" />
+                                <img src={mongodb} alt="Image4" />
                                 <h5>MongoDB</h5>
                             </div>
                             <div className="item">
-                                <img src={express} alt="Image" />
+                                <img src={express} alt="Image5" />
                                 <h5>Express</h5>
                             </div>
                             <div className="item">
-                                <img src={spring} alt="Image" />
+                                <img src={spring} alt="Image6" />
                                 <h5>Spring Boot</h5>
                             </div>
                         </Carousel>
