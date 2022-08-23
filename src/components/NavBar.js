@@ -37,7 +37,7 @@ export const NavBar = () => {
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand href="/">
-            <p>Aayush</p>
+            <img src={logo} alt="logo"></img>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
@@ -47,7 +47,6 @@ export const NavBar = () => {
               <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
               <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
               <Nav.Link href="#project" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
-              <Nav.Link href="#about" className={activeLink === 'about' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('about')}>About Me</Nav.Link>
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
@@ -55,7 +54,7 @@ export const NavBar = () => {
                 <a target="_blank" rel="noreferrer" href="https://github.com/aayushpe"><img src={navIcon2} alt="" /></a>
               </div>
               <HashLink to='#connect'>
-                <button className="vvd"><span>Let’s Connect</span></button>
+                <button className="vvd"><span>About Me</span></button>
               </HashLink>
             </span>
           </Navbar.Collapse>

@@ -19,9 +19,16 @@ export const Projects = () => {
   ];
   const projects2 = [
     {
-      title: "Dad-Jokes",
-      description: "React",
+      title: "Score Keeper",
+      description: "HTML, CSS, JavaScript",
       imgUrl: projImg2,
+    },
+  ];
+  const projects3 = [
+    {
+      title: "Springboot REST api",
+      description: "Docker, Springboot",
+      imgUrl: projImg3,
     },
   ];
   return (
@@ -62,11 +69,10 @@ export const Projects = () => {
                         similar to Gas buddy. The app uses a CRUD system in order to store new gas station
                         location data and prices, which is then is stored in MongoDb.
                         In addition to this, there is a feature to extract and autofill the gas station price and
-                        name using the Google Vision API.</p>
+                        name using the Google Vision API. The application also uses a REST api protocol to send and
+                        retrieve data from MongoDB.<br></br><br></br>
+                        <a target="_blank" rel="noreferrer" href="https://github.com/aayushpe/Gas_Map"><Button variant="light">Click to go to Project</Button>{' '}</a></p>
                       </Row>
-                      <div class="text-center">
-                      <a target="_blank" rel="noreferrer" href="https://github.com/aayushpe/Gas_Map"><Button variant="outline-light">Click to go to project</Button>{' '}</a>
-                      </div>
                     </Tab.Pane>
 
                     <Tab.Pane eventKey="second">
@@ -81,21 +87,16 @@ export const Projects = () => {
                             )
                           })
                         }
-                        <p>This Project uses MongoDB, Nodejs and Express to create an app that displays Gas Prices, 
-                        similar to Gas buddy. The app uses a CRUD system in order to store new gas station
-                        location data and prices, which is then is stored in MongoDb.
-                        In addition to this, there is a feature to extract and autofill the gas station price and
-                        name using the Google Vision API.</p>
+                        <p>An application that utilizes javascript and HTML to keep 
+                          the score of a game.<br></br><br></br>
+                        <a target="_blank" rel="noreferrer" href="https://aayushpe.github.io/ScoreKeeper/"><Button variant="light">Click to go to Project</Button>{' '}</a></p>
                       </Row>
-                      <div class="text-center">
-                      <a target="_blank" rel="noreferrer" href="https://github.com/aayushpe/Gas_Map"><Button variant="outline-light">Click to go to project</Button>{' '}</a>
-                      </div>
                     </Tab.Pane>
 
                     <Tab.Pane eventKey="third">
                     <Row>
                         {
-                          projects1.map((project, index) => {
+                          projects3.map((project, index) => {
                             return (
                               <ProjectCard
                                 key={index}
@@ -104,14 +105,8 @@ export const Projects = () => {
                             )
                           })
                         }
-                        <p>This Project uses MongoDB, Nodejs and Express to create an app that displays Gas Prices, 
-                        similar to Gas buddy. The app uses a CRUD system in order to store new gas station
-                        location data and prices, which is then is stored in MongoDb.
-                        In addition to this, there is a feature to extract and autofill the gas station price and
-                        name using the Google Vision API.</p>
-                        <div class="text-center">
-                          <a target="_blank" rel="noreferrer" href="https://github.com/aayushpe/Gas_Map"><Button variant="outline-light">Click to go to project</Button>{' '}</a>
-                        </div>
+                        <p>A REST api that connects to mongoDB using Springboot and Docker<br></br><br></br>
+                        <a target="_blank" rel="noreferrer" href="https://github.com/aayushpe/Mongo-Database"><Button variant="light">Click to go to Project</Button>{' '}</a></p>
                       </Row>
                     </Tab.Pane>
                   
