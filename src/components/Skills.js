@@ -4,6 +4,7 @@ import meter3 from "../assets/img/meter3.svg";
 import mongodb from "../assets/img/mongodb.svg";
 import spring from "../assets/img/spring-boot.svg";
 import express from "../assets/img/express.svg";
+import linux from "../assets/img/linux-svgrepo-com.svg"
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import arrow1 from "../assets/img/arrow1.svg";
@@ -63,6 +64,10 @@ export const Skills = () => {
                             <div className="item">
                                 <img src={spring} alt="Image6" />
                                 <h5>Spring Boot</h5>
+                            </div>
+                            <div className="item">
+                                <img src={linux} alt="Image6" />
+                                <h5>Linux</h5>
                             </div>
                         </Carousel>
                     </div>

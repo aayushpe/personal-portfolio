@@ -12,22 +12,22 @@ export const Projects = () => {
 
   const projects1 = [
     {
-      title: "Gas-Map",
-      description: "MongoDB, Express, Nodejs",
+      title: "Simply StateFarm",
+      description: "MongoDB, React, Express, NodeJs",
       imgUrl: projImg1,
     },
   ];
   const projects2 = [
     {
-      title: "Score Keeper",
-      description: "HTML, CSS, JavaScript",
+      title: "Gas-Map",
+      description: "MongoDB, Express, NodeJs",
       imgUrl: projImg2,
     },
   ];
   const projects3 = [
     {
-      title: "Springboot REST api",
-      description: "Docker, Springboot",
+      title: "Reversing a Sound File",
+      description: "Java",
       imgUrl: projImg3,
     },
   ];
@@ -65,13 +65,10 @@ export const Projects = () => {
                             )
                           })
                         }
-                        <p>This Project uses MongoDB, Nodejs and Express to create an app that displays Gas Prices, 
-                        similar to Gas buddy. The app uses a CRUD system in order to store new gas station
-                        location data and prices, which is then is stored in MongoDb.
-                        In addition to this, there is a feature to extract and autofill the gas station price and
-                        name using the Google Vision API. The application also uses a REST api protocol to send and
-                        retrieve data from MongoDB.<br></br><br></br>
-                        <a target="_blank" rel="noreferrer" href="https://github.com/aayushpe/Gas_Map"><Button variant="light">Click to go to Project</Button>{' '}</a></p>
+                        <p>A hackathon project to enhance the small business insurance experience with State Farm. We attempted Improve the signup, and payments process for small businesses, 
+                          through simplification of the UI, and individually tailoring provided information. Agents can access an admin dashboard to view users as well.
+                        <br></br><br></br>
+                        <a target="_blank" rel="noreferrer" href="https://devpost.com/software/small-business-statefarm"><Button variant="light">Click to go to Project</Button>{' '}</a></p>
                       </Row>
                     </Tab.Pane>
 
@@ -87,9 +84,9 @@ export const Projects = () => {
                             )
                           })
                         }
-                        <p>An application that utilizes javascript and HTML to keep 
-                          the score of a game.<br></br><br></br>
-                        <a target="_blank" rel="noreferrer" href="https://aayushpe.github.io/ScoreKeeper/"><Button variant="light">Click to go to Project</Button>{' '}</a></p>
+                        <p>This full stack Project leverages the MERN stack to display Gas Prices in the users local area. To add information to the app,
+                          users can take a picture of the gas station price board, then the app will parse the data and store it in the database.<br></br><br></br>
+                        <a target="_blank" rel="noreferrer" href="https://github.com/aayushpe/Gas_Map"><Button variant="light">Click to go to Project</Button>{' '}</a></p>
                       </Row>
                     </Tab.Pane>
 
@@ -105,8 +102,8 @@ export const Projects = () => {
                             )
                           })
                         }
-                        <p>A REST api that connects to mongoDB using Springboot and Docker<br></br><br></br>
-                        <a target="_blank" rel="noreferrer" href="https://github.com/aayushpe/Mongo-Database"><Button variant="light">Click to go to Project</Button>{' '}</a></p>
+                        <p>A backmasking algorithim written in Java that uses the stack data structure to reverse a sound file.<br></br><br></br>
+                        <a target="_blank" rel="noreferrer" href="https://github.com/aayushpe/Backmasking"><Button variant="light">Click to go to Project</Button>{' '}</a></p>
                       </Row>
                     </Tab.Pane>
                   

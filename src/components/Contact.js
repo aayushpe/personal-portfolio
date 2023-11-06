@@ -58,7 +58,7 @@ export const Contact = () => {
                   <h2>About Me</h2>
                 </div>
 
-                <p>I am a dedicated, and open-minded computer engineering student studying at the University of Texas at Dallas.
+                <p>I am a dedicated, and open-minded computer science student studying at the University of Texas at Dallas.
                                 I enjoy creating products and solutions
                                 that both challenge me as a software developer and an engineer.
                 </p>

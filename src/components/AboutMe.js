@@ -9,10 +9,9 @@ export const AboutMe = () => {
                 <Row>
                 <Col size={12} sm={12} md={12}>
                         <div className="text-center">
-                            <p>I am a computer engineering student studying at the University of Texas at Dallas.
+                            <p>I am a computer science student studying at the University of Texas at Dallas.
                                 I am dedicated, open-minded and work well in teams. I want to create products and solutions
-                                that both challenge me as a software developer and engineer. My greatest skill is the ability
-                                to google information.
+                                that both challenge me as a software developer and engineer.
                             </p>
                         </div>
                 </Col>
